@@ -73,7 +73,7 @@ def generate_site(folder_path):
 def main():
     generate_site(sys.argv[1])
 
-#creiez folderul output daca nu e creiat si generez site urile
+#creez folderul output daca nu e creat si generez site-urile
 if __name__ == '__main__':
     logging.basicConfig()
     if(sys.argv[2] not in os.listdir("test")):
