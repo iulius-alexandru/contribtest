@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{Title}}</title>
+</head>
+<body>
+    <h1>Autorul paginii este {{autor}}</h1>
+    {% if prima_carte == "True" %}
+     <h2>Aceasta este prima lui carte</h2>
+    {% else %}
+        <h1>El a mai scris:
+            <ul>
+                {% for carte in carti %}
+                    <li>{{carte}}</li>
+                {% endfor %}
+
+            </ul>
+        </h1>
+    {% endif %}
+    {% block content %}
+        <p>
+            {{content}}
+        </p>
+    {% endblock %}
+</body>
+</html>
