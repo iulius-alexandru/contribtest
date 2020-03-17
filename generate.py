@@ -54,7 +54,7 @@ def write_output(name, html):
 write_output('fisier_test','<h1>Fisier Test</h1>')
 """
 #Functia generate site  ia ca parametru adresa folderului unde se afla fisierele
-#cu informatiile care trebuie trecute in site-urile sabloan pentru jinja2 si le trece si completeaza site-urile sabloane
+#cu informatiile care trebuie trecute in site-urile sablon pentru jinja2 si le trece si completeaza site-urile sabloane
 #iar apoi le salveaza in folderul output cu numele fisierelor din care ia informatiile pentru completarea sabloanelor
 def generate_site(folder_path):
     log.info("Generating site from %r", folder_path)
